@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="49517" started-at="2021-02-04T06:05:47Z" finished-at="2021-02-04T06:06:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="49517" started-at="2021-02-04T06:05:47Z" finished-at="2021-02-04T06:06:36Z">
+      <class name="vtiger.Test_CreateProduct002">
+        <test-method status="PASS" signature="startConnection()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="startConnection" is-config="true" duration-ms="33" started-at="2021-02-04T11:35:47Z" finished-at="2021-02-04T11:35:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startConnection -->
+        <test-method status="PASS" signature="startcbt()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="startcbt" is-config="true" duration-ms="0" started-at="2021-02-04T11:35:47Z" finished-at="2021-02-04T11:35:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startcbt -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="launchBrowser" is-config="true" duration-ms="9092" started-at="2021-02-04T11:35:47Z" finished-at="2021-02-04T11:35:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="logintoAppl()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="logintoAppl" is-config="true" duration-ms="1585" started-at="2021-02-04T11:35:56Z" finished-at="2021-02-04T11:35:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintoAppl -->
+        <test-method status="PASS" signature="createQuickproduct_withTeamSales()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="createQuickproduct_withTeamSales" duration-ms="38683" started-at="2021-02-04T11:35:57Z" finished-at="2021-02-04T11:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createQuickproduct_withTeamSales -->
+        <test-method status="PASS" signature="logoutAppl()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="logoutAppl" is-config="true" duration-ms="0" started-at="2021-02-04T11:36:36Z" finished-at="2021-02-04T11:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutAppl -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="closeBrowser" is-config="true" duration-ms="140" started-at="2021-02-04T11:36:36Z" finished-at="2021-02-04T11:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="closeConnection()[pri:0, instance:vtiger.Test_CreateProduct002@49e4cb85]" name="closeConnection" is-config="true" duration-ms="0" started-at="2021-02-04T11:36:36Z" finished-at="2021-02-04T11:36:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- vtiger.Test_CreateProduct002 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
