@@ -23,7 +23,7 @@ public class Test_CreateProduct002 extends BaseClass{
 		hm.get_TeamSelling_dropDown();
 		hm.getquickSave();	
 	}
-	@ Test(invocationCount=0)
+	@ Test
 	public void createProduct_withQuickCreate() throws Throwable{
 		Login lgn = new Login(driver);
 		lgn.getUsername();

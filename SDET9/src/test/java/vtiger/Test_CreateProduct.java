@@ -32,7 +32,7 @@ public void createProduct() throws Throwable{
 	cnp.getSave();
      }
 
-@Test
+@Test(invocationCount=0)
 public void createProduct_withoutMandatoryfield() throws Throwable{
 	
 	Login lgn = new Login(driver);
@@ -79,22 +79,5 @@ public void createProduct_without_active() throws Throwable{
 	
 	
      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }

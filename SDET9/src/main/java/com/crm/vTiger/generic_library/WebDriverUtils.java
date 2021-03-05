@@ -89,16 +89,17 @@ public class WebDriverUtils {
 	      } 
 	}
 	/**
+	 * @author amit
 	 * this method will move the cursor to the specified element and then click on specified element
 	 * @param driver
 	 * @param element
 	 * @param qot
 	 */
 	
-	public void perform_mouse_Hover(WebDriver driver,WebElement element, WebElement qot){
+	public void perform_mouse_Hover(WebDriver driver,WebElement element){
 		Actions act=new Actions(driver);
-		act.moveToElement(element).perform();
-		 act.click(qot).perform();
+		act.clickAndHold(element).perform();
+	
 	}
 	/**
 	 * @author hp

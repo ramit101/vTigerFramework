@@ -7,10 +7,6 @@ import java.sql.SQLException;
 
 import com.mysql.cj.jdbc.Driver;
 
-
-
-
-
 /**
  * 
  * @author Deepak
@@ -58,16 +54,12 @@ public class DataBaseUtilities {
 			 return result;
 		} catch (SQLException e) {
 			e.printStackTrace();
-		} finally {
-			 
-				
+		} finally {				
 			
 		}
 		return result;
 		
 	}
-	
-
 	
 	public   String executeQueryAndGetData(String query ,int columnName , String expectedData) throws Throwable{
          boolean flag = false;

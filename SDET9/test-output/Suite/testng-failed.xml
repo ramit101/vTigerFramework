@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="Test runner1">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="vtiger.Test_CreateProduct"/>
+    </classes>
+  </test> <!-- Test runner1 -->
+  <test name="Test runner 2">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="vtiger.Test_CreateProduct002"/>
+    </classes>
+  </test> <!-- Test runner 2 -->
+  <test name="Test runner1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="vtiger.Test_CreateProduct">
+        <methods>
+          <include name="logintoAppl"/>
+          <include name="logoutAppl"/>
+          <include name="createProduct_without_active"/>
+          <include name="launchBrowser"/>
+          <include name="startcbt"/>
+        </methods>
+      </class> <!-- vtiger.Test_CreateProduct -->
+      <class name="vtiger.Test_CreateProduct002">
+        <methods>
+          <include name="closeConnection"/>
+          <include name="logintoAppl"/>
+          <include name="logoutAppl"/>
+          <include name="startConnection"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="startcbt"/>
+          <include name="stopCrossbrowserTesting"/>
+        </methods>
+      </class> <!-- vtiger.Test_CreateProduct002 -->
+    </classes>
+  </test> <!-- Test runner1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

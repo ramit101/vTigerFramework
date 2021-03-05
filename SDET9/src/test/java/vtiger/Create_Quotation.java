@@ -33,7 +33,8 @@ public class Create_Quotation {
 		WebElement qot = driver.findElement(By.xpath("//a[text()='Quotes']"));
 		
 		
-		 lib.perform_mouse_Hover(driver,mor, qot);
+		 lib.perform_mouse_Hover(driver,mor);
+		 qot.click();
 		  
 		  driver.findElement(By.xpath("//img[@title='Create Quote...']")).click();
 		  driver.findElement(By.xpath("//input[@name='subject']")).sendKeys("100 HP Systems");

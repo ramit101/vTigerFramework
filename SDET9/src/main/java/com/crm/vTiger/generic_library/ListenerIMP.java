@@ -29,7 +29,7 @@ public class ListenerIMP implements ITestListener{
         report.attachReporter(htmlReport);
         report.setSystemInfo("TestURL", "https://example.com");
         report.setSystemInfo("Platform", "Windows 10");
-        report.setSystemInfo("Reporter Name", "Nithesh");
+        report.setSystemInfo("Reporter Name", "amitR");
     }		
 
     public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {		       				

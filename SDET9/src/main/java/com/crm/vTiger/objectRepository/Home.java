@@ -1,5 +1,6 @@
 package com.crm.vTiger.objectRepository;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,6 +11,7 @@ import com.crm.vTiger.generic_library.FileUtility;
 import com.crm.vTiger.generic_library.WebDriverUtils;
 
 public class Home extends  WebDriverUtils  {
+	WebDriver driver;
 	public ExcelUtility excelLib= new ExcelUtility();
 	
 @FindBy(xpath="//a[text()='Products']")
@@ -29,6 +31,8 @@ private WebElement dropd;
 
 @FindBy(xpath="//input[@title='Save [Alt+S]']")
 private WebElement qksave;
+
+
 
 public Home(WebDriver driver){
 	PageFactory.initElements(driver, this);
@@ -61,9 +65,11 @@ public void get_selectGroup(){
 public void get_TeamSelling_dropDown(){
 	handling_dropDown(dropd, "Team Selling");
 }
+
 public void getquickSave(){
 	qksave.click();
 }
+
 
 
 
