@@ -1,22 +1,19 @@
 package flipkart;
 
 import org.testng.Assert;
+import org.testng.IRetryAnalyzer;
+import org.testng.ITestResult;
 import org.testng.annotations.Test;
 
 import com.crm.vTiger.generic_library.RETRYTestListIm;
 
-public class ReteyAnalyserImp {
+public class ReteyAnalyserImp implements IRetryAnalyzer {
 
-	@Test((retryAnalyzer = RETRYTestListIm.class)
-
-	public void tc_01(){
-
-		Assert.assertEquals("ddt","ddd");
-
-
-
-		System.out.println("test got failed");
-
-
+	@Test()
+	public boolean retry(ITestResult result) {
+		expectedString exp="abc";
+		actualString actual="xyz";
+		Assert.assertEquals(expectedString, actualString);
+		return false;
 	}
-}
+	}
